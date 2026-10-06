@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Fjarholm | Digital Craftsmanship & Geometric Vector Art</title>
-    <meta name="description" content="Explore Fjarholm's koodipõhist vektorkunsti, SVG geomeetriat ja CodePen ekspositsiooni.">
+    <meta name="description" content="Explore Fjarholm's vector craftsmanship, SVG line art, and geometric silhouettes created with precision SVG code.">
 
     <link rel="canonical" href="https://fjarholm.com/vector-craftsmanship/">
 
@@ -16,7 +16,7 @@
     <meta property="og:url" content="https://fjarholm.com/vector-craftsmanship/">
     <meta property="og:type" content="website">
 
-    <!-- Faviconid vastavalt sinu kaustale -->
+    <!-- Faviconid -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon/favicon.svg">
     <link rel="icon" type="image/png" sizes="512x512" href="assets/img/favicon/favicon.png">
@@ -34,191 +34,124 @@
             color: #e0e0e0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-
-        /* Navigatsioon ja logo */
-        .nav-center {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 30px 20px 10px;
-        }
-
-        .logo-img {
-            height: auto;
-            max-width: 260px;
-            margin-bottom: 18px;
-        }
-
-        .nav-links a {
-            color: #a0a0a0;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 15px;
-            letter-spacing: 1px;
-            transition: color 0.25s ease;
-        }
-
-        .nav-links a:hover {
-            color: #ffffff;
-        }
-
-        main {
-            flex: 1;
-            width: 100%;
-            max-width: 860px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 2rem 1rem;
         }
 
-        .showcase-header {
-            text-align: center;
-            margin-bottom: 3rem;
+        .back-link {
+            color: #888;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+
+        .back-link:hover {
+            color: #fff;
         }
 
         h1 {
-            font-size: 30px;
+            font-size: 2rem;
             font-weight: 300;
-            letter-spacing: -0.01em;
-            margin-bottom: 0.8rem;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
             color: #ffffff;
         }
 
-        .intro-text {
+        p {
             color: #aaa;
-            font-size: 15px;
-            max-width: 620px;
-            margin: 0 auto;
-            font-weight: 300;
+            font-size: 1rem;
         }
 
         h2 {
-            font-size: 18px;
-            font-weight: 400;
-            letter-spacing: 0.5px;
-            margin-top: 3rem;
-            margin-bottom: 1rem;
+            font-size: 1.25rem;
+            font-weight: 300;
+            letter-spacing: -0.01em;
+            margin-top: 2.5rem;
             border-bottom: 1px solid #222;
-            padding-bottom: 0.6rem;
+            padding-bottom: 0.5rem;
             color: #dddddd;
         }
 
         .code-container {
-            margin-top: 1rem;
-            margin-bottom: 2.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 3rem;
         }
 
-        /* Responsive iframe ilma kerimisribadeta */
+        /* Responsive iframe ilma kerimisribadeta ja tühja koodiaknata */
         .code-container iframe {
             width: 100%;
-            height: 560px;
-            border: 1px solid #2a2a2a;
+            height: 520px;
+            border: 1px solid #333;
             border-radius: 8px;
             background: #141414;
         }
 
         @media (max-width: 600px) {
             .code-container iframe {
-                height: 420px;
+                height: 380px;
             }
         }
 
-        /* Footer */
         footer {
-            text-align: center;
-            padding: 40px 20px 50px;
-            background-color: #0a0a0a;
-            border-top: 1px solid #1f1f1f;
             margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid #222;
+            font-size: 0.85rem;
+            color: #666;
         }
 
-        .footer-links a {
-            display: inline-block;
-            color: #aaaaaa;
+        footer a {
+            color: #aaa;
             text-decoration: none;
-            margin: 4px 10px;
-            font-size: 14px;
-            transition: color 0.25s ease;
         }
 
-        .footer-links a:hover {
-            color: #ffffff;
-        }
-
-        footer p {
-            color: #666666;
-            font-size: 13px;
-            margin-top: 18px;
+        footer a:hover {
+            color: #fff;
         }
     </style>
 </head>
 <body>
 
-    <!-- Päis ja logo -->
-    <nav class="nav-center">
-        <img src="assets/img/logo/fjarholm-logo.svg" class="logo-img" alt="Fjarholm logo" width="260" height="80" fetchpriority="high">
-        <div class="nav-links">
-            <a href="https://fjarholm.com/">Home</a>
-            <a href="https://fjarholm.com/gallery.html">Gallery</a>
-            <a href="https://fjarholm.com/info.html">Info</a>
-        </div>
-    </nav>
+    <a href="https://fjarholm.com" class="back-link">&larr; Back to Fjarholm</a>
 
-    <main>
-        <header class="showcase-header">
-            <h1>Digital Craftsmanship & Geometric Vector Art</h1>
-            <p class="intro-text">
-                Every vector composition is built from structured logic, precision geometry, and clean SVG code. Fully independent of AI generation tools.
-            </p>
-        </header>
-
+    <section class="about-my-art">
+        <h1>Digital Craftsmanship & Geometric Vector Art</h1>
+        <p>Every vector composition is built from structured logic, precision geometry, and clean SVG code. Fully independent of AI generation tools.</p>
+        
         <!-- Work 02 -->
-        <section>
-            <h2>01. Geometric Vector Art SVG_02</h2>
-            <div class="code-container">
-                <iframe 
-                    title="Geometric Vector Art SVG_02" 
-                    src="https://codepen.io/fjarholm-art/embed/019f4ae3-e067-7351-a012-34d8a5b5d914?default-tab=result" 
-                    loading="lazy" 
-                    allowtransparency="true" 
-                    allowfullscreen="true">
-                    See the Pen <a href="https://codepen.io/fjarholm-art/pen/019f4ae3-e067-7351-a012-34d8a5b5d914">
-                    Geometric Vector Art SVG_02</a> by Fjarholm.
-                </iframe>
-            </div>
-        </section>
+        <h2>01. Geometric Vector Art SVG_02</h2>
+        <div class="code-container">
+            <iframe 
+                title="Geometric Vector Art SVG_02" 
+                src="https://codepen.io/fjarholm-art/embed/019f4ae3-e067-7351-a012-34d8a5b5d914?default-tab=result" 
+                loading="lazy" 
+                allowtransparency="true" 
+                allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/fjarholm-art/pen/019f4ae3-e067-7351-a012-34d8a5b5d914">
+                Geometric Vector Art SVG_02</a> by Fjarholm.
+            </iframe>
+        </div>
 
         <!-- Work 01 -->
-        <section>
-            <h2>02. Geometric Vector Art SVG_01</h2>
-            <div class="code-container">
-                <iframe 
-                    title="Geometric Vector Art SVG_01" 
-                    src="https://codepen.io/fjarholm-art/embed/019f3b71-101a-7045-b82b-165b7488167d?default-tab=result" 
-                    loading="lazy" 
-                    allowtransparency="true" 
-                    allowfullscreen="true">
-                    See the Pen <a href="https://codepen.io/fjarholm-art/pen/019f3b71-101a-7045-b82b-165b7488167d">
-                    Geometric Vector Art SVG_01</a> by Fjarholm.
-                </iframe>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="footer-links">
-            <a href="https://fjarholm.com/">Home</a>
-            <a href="https://fjarholm.com/gallery.html">Gallery</a>
-            <a href="https://www.instagram.com/fjarholm/" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://codepen.io/fjarholm-art/" target="_blank" rel="noopener noreferrer">CodePen</a>
-            <a href="https://github.com/fjarholm-art/" target="_blank" rel="noopener noreferrer">GitHub</a>
-            <a href="mailto:info@fjarholm.com">info@fjarholm.com</a>
+        <h2>02. Geometric Vector Art SVG_01</h2>
+        <div class="code-container">
+            <iframe 
+                title="Geometric Vector Art SVG_01" 
+                src="https://codepen.io/fjarholm-art/embed/019f3b71-101a-7045-b82b-165b7488167d?default-tab=result" 
+                loading="lazy" 
+                allowtransparency="true" 
+                allowfullscreen="true">
+                See the Pen <a href="https://codepen.io/fjarholm-art/pen/019f3b71-101a-7045-b82b-165b7488167d">
+                Geometric Vector Art SVG_01</a> by Fjarholm.
+            </iframe>
         </div>
-        <p>© Fjarholm — Independent Vector Art</p>
+    </section>
+
+    <footer>
+        <p>&copy; Fjarholm — Independent Vector Art. Official Website: <a href="https://fjarholm.com">fjarholm.com</a></p>
     </footer>
 
 </body>

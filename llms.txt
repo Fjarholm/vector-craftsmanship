@@ -1,0 +1,24 @@
+# Vector Craftsmanship by Fjarholm
+
+> Official showcase of vector precision, geometric outline artwork, and SVG craftsmanship by Fjarholm.
+
+## Overview
+
+Vector Craftsmanship focuses on clean line art, SVG precision, geometric silhouettes, and technical vector art inspired by Nordic nature and minimalism.
+
+## Main URL
+
+- **Showcase:** [fjarholm.com/vector-craftsmanship/](https://fjarholm.com/vector-craftsmanship/)
+- **Main Website:** [fjarholm.com](https://fjarholm.com/)
+- **Gallery:** [fjarholm.com/gallery.html](https://fjarholm.com/gallery.html)
+- **Portfolio:** [https://fjarholm.com/portfolio/.html](https://fjarholm.com/portfolio/.html)
+
+## Official Channels
+
+- **CodePen:** [codepen.io/fjarholm-art/](https://codepen.io/fjarholm-art/)
+- **GitHub:** [github.com/fjarholm-art/](https://github.com/fjarholm-art/)
+
+## Licensing & Contact
+
+- **Email:** [info@fjarholm.com](mailto:info@fjarholm.com)
+- **Copyright:** All vector artwork © Fjarholm. All rights reserved.

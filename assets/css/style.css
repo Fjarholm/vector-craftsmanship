@@ -1,0 +1,30 @@
+/* Tööde ruudustik: Arvutis 2 kõrvuti, mobiilis 1 üksteise all */
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.code-container {
+    width: 100%;
+}
+
+/* Fikseeritud 4:5 kuvasuhe (laius : kõrgus) */
+.code-container iframe {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    height: auto; /* Kõrgus arvutatakse automaatselt kuvasuhtest */
+    border: 1px solid #222;
+    border-radius: 8px;
+    background: #0f0f0f;
+    display: block;
+}
+
+/* Mobiilivaade (Instragrami stiilis üksteise all) */
+@media (max-width: 768px) {
+    .works-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+}

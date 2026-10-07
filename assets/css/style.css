@@ -8,16 +8,18 @@
 
 .code-container {
     width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
-/* Fikseeritud 4:5 kuvasuhe (laius : kõrgus) */
 .code-container iframe {
     width: 100%;
-    aspect-ratio: 4 / 5;
-    height: auto; /* Kõrgus arvutatakse automaatselt kuvasuhtest */
-    border: 1px solid #222;
+    /* Arvutame kõrguse nii, et pildiala ise jääks 1:1 ruuduks (lisame ~70px CodePeni enda ribade jaoks) */
+    height: calc(100 width + 70px); 
+    aspect-ratio: 1 / 1.15; /* Tagab ruudulähedase pildiala koos CodePeni päise/jalusega */
+    border: 1px solid #333;
     border-radius: 8px;
-    background: #0f0f0f;
+    background: #e5d3c5; /* Sinu beež taustavärv, kui pilt laeb */
     display: block;
 }
 

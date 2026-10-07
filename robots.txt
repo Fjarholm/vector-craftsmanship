@@ -1,0 +1,10 @@
+# ==========================================================
+# Fjarholm Vector Craftsmanship
+# https://fjarholm.com/vector-craftsmanship/
+# ========================================================== 
+
+User-agent: *
+
+Allow: /
+
+Sitemap: https://fjarholm.com/vector-craftsmanship/sitemap.xml

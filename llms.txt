@@ -11,7 +11,7 @@ Vector Craftsmanship focuses on clean line art, SVG precision, geometric silhoue
 - **Showcase:** [fjarholm.com/vector-craftsmanship/](https://fjarholm.com/vector-craftsmanship/)
 - **Main Website:** [fjarholm.com](https://fjarholm.com/)
 - **Gallery:** [fjarholm.com/gallery.html](https://fjarholm.com/gallery.html)
-- **Portfolio:** [https://fjarholm.com/portfolio/.html](https://fjarholm.com/portfolio/.html)
+- **Portfolio:** [https://fjarholm.com/portfolio/](https://fjarholm.com/portfolio/)
 
 ## Official Channels
 

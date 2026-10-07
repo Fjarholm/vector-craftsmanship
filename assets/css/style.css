@@ -1,4 +1,46 @@
-/* Tööde ruudustik: Arvutis 2 kõrvuti, mobiilis 1 üksteise all */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0f0f0f;
+    color: #e0e0e0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.back-link {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.back-link:hover {
+    color: #fff;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+p {
+    color: #aaa;
+    font-size: 1rem;
+}
+
+/* 2-veeruline ruudustik (Arvutis kõrvuti, mobiilis üksteise all) */
 .works-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -6,27 +48,53 @@
     margin-top: 2rem;
 }
 
-.code-container {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 8px;
+h2 {
+    font-size: 1.1rem;
+    font-weight: 300;
+    letter-spacing: -0.01em;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #222;
+    padding-bottom: 0.5rem;
+    color: #dddddd;
 }
 
+.code-container {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #141414;
+    border: 1px solid #282828;
+}
+
+/* Ruudukujuline aken (1:1 proportsioon) */
 .code-container iframe {
     width: 100%;
-    /* Arvutame kõrguse nii, et pildiala ise jääks 1:1 ruuduks (lisame ~70px CodePeni enda ribade jaoks) */
-    height: calc(100 width + 70px); 
-    aspect-ratio: 1 / 1.15; /* Tagab ruudulähedase pildiala koos CodePeni päise/jalusega */
-    border: 1px solid #333;
-    border-radius: 8px;
-    background: #e5d3c5; /* Sinu beež taustavärv, kui pilt laeb */
+    aspect-ratio: 1 / 1;
+    border: none;
     display: block;
 }
 
-/* Mobiilivaade (Instragrami stiilis üksteise all) */
+/* Mobiilivaade */
 @media (max-width: 768px) {
     .works-grid {
         grid-template-columns: 1fr;
         gap: 2.5rem;
     }
+}
+
+footer {
+    margin-top: 4rem;
+    padding-top: 2rem;
+    border-top: 1px solid #222;
+    font-size: 0.85rem;
+    color: #666;
+}
+
+footer a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #fff;
 }

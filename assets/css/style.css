@@ -9,53 +9,78 @@ body {
     color: #e0e0e0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Tagasilink */
+.back-link {
+    color: #888888;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: color 0.25s ease;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+.back-link:hover {
+    color: #ffffff;
+}
+
+main {
+    flex: 1;
+    width: 100%;
     max-width: 900px;
     margin: 0 auto;
     padding: 2rem 1rem;
 }
 
-.back-link {
-    color: #888;
-    text-decoration: none;
-    font-size: 0.9rem;
-    transition: color 0.2s ease;
-    display: inline-block;
-    margin-bottom: 1.5rem;
-}
-
-.back-link:hover {
-    color: #fff;
+/* Pealkiri ja intro */
+.showcase-header {
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 300;
-    letter-spacing: -0.02em;
-    margin-bottom: 0.5rem;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
     color: #ffffff;
 }
 
-p {
-    color: #aaa;
-    font-size: 1rem;
+.intro-text {
+    font-size: 15px;
+    color: #aaaaaa;
+    max-width: 540px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-weight: 300;
 }
 
-/* 2-veeruline ruudustik (Arvutis kõrvuti, mobiilis üksteise all) */
+/* Tööde ruudustik */
 .works-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+    gap: 2.5rem;
     margin-top: 2rem;
 }
 
+.work-item {
+    width: 100%;
+}
+
+/* H2 alapealkirjad - puhas paigutus ilma ekraani laiuse jooneta */
 h2 {
-    font-size: 1.1rem;
-    font-weight: 300;
-    letter-spacing: -0.01em;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1px;
     margin-bottom: 1rem;
-    border-bottom: 1px solid #222;
+    color: #cccccc;
+    border-bottom: 1px solid #222222;
     padding-bottom: 0.5rem;
-    color: #dddddd;
 }
 
 .code-container {
@@ -66,7 +91,7 @@ h2 {
     border: 1px solid #282828;
 }
 
-/* Ruudukujuline aken (1:1 proportsioon) */
+/* Ruudukujuline aken 1:1 proportsiooniga */
 .code-container iframe {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -78,23 +103,39 @@ h2 {
 @media (max-width: 768px) {
     .works-grid {
         grid-template-columns: 1fr;
-        gap: 2.5rem;
+        gap: 3rem;
+    }
+    
+    h1 {
+        font-size: 26px;
     }
 }
 
+/* Footer - identne pealehe ja galeriiga */
 footer {
+    text-align: center;
+    padding: 40px 20px 50px;
+    background-color: #0d0d0d;
+    border-top: 1px solid #1f1f1f;
     margin-top: 4rem;
-    padding-top: 2rem;
-    border-top: 1px solid #222;
-    font-size: 0.85rem;
-    color: #666;
 }
 
-footer a {
-    color: #aaa;
+.footer-links a {
+    display: inline-block;
+    color: #aaaaaa;
     text-decoration: none;
+    margin: 4px 8px;
+    padding: 8px 10px;
+    font-size: 14px;
+    transition: color 0.25s ease;
 }
 
-footer a:hover {
-    color: #fff;
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+footer p {
+    color: #666666;
+    font-size: 13px;
+    margin-top: 18px;
 }

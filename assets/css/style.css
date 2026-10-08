@@ -1,3 +1,47 @@
+/* ------------------------------------------------ */
+/* ------------------ NAVIGATION ------------------- */
+/* ------------------------------------------------ */
+
+/* Navigatsiooni konteiner */
+.nav-header {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* Desktopi logo mõõdud ja paigutus */
+.logo-img {
+    height: 34px;
+    width: auto;
+    display: block;
+    transition: opacity 0.25s ease;
+}
+
+.logo-img:hover {
+    opacity: 0.85;
+}
+
+/* Mobiilivaade (seadmed laiuseni kuni 768px) */
+@media (max-width: 768px) {
+    .nav-header {
+        padding: 20px 15px 5px;
+    }
+
+    .logo-img {
+        height: 28px; /* Mobiilis 28-30px hoiab päise kompaktse ja puhtana */
+    }
+}
+
+/* ------------------------------------------------ */
+
 * {
     box-sizing: border-box;
     margin: 0;

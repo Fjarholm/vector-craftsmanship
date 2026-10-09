@@ -14,11 +14,11 @@ body {
     min-height: 100vh;
 }
 
-/* NAVIGATION - Servast serva piirjoonega */
+/* NAVIGATION (Servast serva joonega) */
 .nav-header {
     width: 100%;
     background-color: #0d0d0d;
-    border-bottom: 1px solid #0f0f0f;
+    border-bottom: 1px solid #1f1f1f;
     padding: 16px 0;
 }
 
@@ -28,7 +28,7 @@ body {
     padding: 0 1rem;
     display: flex;
     justify-content: space-between;
-    align-items: center; /* Hoolitseb selle eest, et nupp ei vajuks alla serva */
+    align-items: center;
 }
 
 .logo-link {
@@ -48,7 +48,7 @@ body {
     opacity: 0.85;
 }
 
-/* Päise nupp "Home" */
+/* Home nupp paremas servas */
 .btn-nav {
     display: inline-block;
     color: #e0e0e0;
@@ -94,34 +94,9 @@ h1 {
     font-size: 15px;
     color: #aaaaaa;
     max-width: 580px;
-    margin: 0 auto 1.5rem;
+    margin: 0 auto;
     line-height: 1.6;
     font-weight: 300;
-}
-
-/* Tekstialune nupp */
-.header-cta-wrap {
-    text-align: center;
-    margin-top: 1rem;
-}
-
-.btn-cta {
-    display: inline-block;
-    color: #cccccc;
-    background-color: #141414;
-    border: 1px solid #2a2a2a;
-    padding: 8px 20px;
-    font-size: 13px;
-    letter-spacing: 1px;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: all 0.25s ease;
-}
-
-.btn-cta:hover {
-    color: #ffffff;
-    border-color: #555555;
-    background-color: #1e1e1e;
 }
 
 /* WORKS GRID */
@@ -177,7 +152,7 @@ h2 {
     }
 }
 
-/* FOOTER - Servast serva piirjoonega */
+/* FOOTER (Servast serva joonega) */
 footer {
     text-align: center;
     padding: 40px 20px 50px;

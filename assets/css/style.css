@@ -48,23 +48,30 @@ body {
     opacity: 0.85;
 }
 
-/* Home nupp paremas servas */
-.btn-nav {
+/* Home nupp oli paremas servas */
+/* Konteiner, mis viib nupu lehe keskele */
+.header-cta-wrap {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Nupu enda välimus */
+.btn-cta {
     display: inline-block;
-    color: #e0e0e0;
+    color: #cccccc;
     background-color: transparent;
-    border: 1px solid #333333;
-    padding: 6px 16px;
-    font-size: 13px;
-    letter-spacing: 0.5px;
+    border: 1px solid #555555;
+    padding: 10px 24px;
+    font-size: 14px;
+    letter-spacing: 1px;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 0px;
     transition: all 0.25s ease;
 }
 
-.btn-nav:hover {
+.btn-cta:hover {
     color: #ffffff;
-    border-color: #666666;
+    border-color: #ffffff;
     background-color: #1a1a1a;
 }
 

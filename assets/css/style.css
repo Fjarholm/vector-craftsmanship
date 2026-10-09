@@ -1,47 +1,3 @@
-/* ------------------------------------------------ */
-/* ------------------ NAVIGATION ------------------- */
-/* ------------------------------------------------ */
-
-/* Navigatsiooni konteiner */
-.nav-header {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 30px 20px 10px;
-    display: flex;
-    align-items: center;
-}
-
-.logo-link {
-    display: inline-block;
-    text-decoration: none;
-}
-
-/* Desktopi logo mõõdud ja paigutus */
-.logo-img {
-    height: 34px;
-    width: auto;
-    display: block;
-    transition: opacity 0.25s ease;
-}
-
-.logo-img:hover {
-    opacity: 0.85;
-}
-
-/* Mobiilivaade (seadmed laiuseni kuni 768px) */
-@media (max-width: 768px) {
-    .nav-header {
-        padding: 20px 15px 5px;
-    }
-
-    .logo-img {
-        height: 28px; /* Mobiilis 28-30px hoiab päise kompaktse ja puhtana */
-    }
-}
-
-/* ------------------------------------------------ */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -58,53 +14,117 @@ body {
     min-height: 100vh;
 }
 
-/* Tagasilink */
-.back-link {
-    color: #888888;
+/* NAVIGATION - Servast serva piirjoonega */
+.nav-header {
+    width: 100%;
+    background-color: #0d0d0d;
+    border-bottom: 1px solid #0f0f0f;
+    padding: 16px 0;
+}
+
+.nav-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Hoolitseb selle eest, et nupp ei vajuks alla serva */
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
     text-decoration: none;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-    transition: color 0.25s ease;
+}
+
+.logo-img {
+    height: 34px;
+    width: auto;
+    display: block;
+    transition: opacity 0.25s ease;
+}
+
+.logo-img:hover {
+    opacity: 0.85;
+}
+
+/* Päise nupp "Home" */
+.btn-nav {
     display: inline-block;
-    margin-bottom: 2rem;
+    color: #e0e0e0;
+    background-color: transparent;
+    border: 1px solid #333333;
+    padding: 6px 16px;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.25s ease;
 }
 
-.back-link:hover {
+.btn-nav:hover {
     color: #ffffff;
+    border-color: #666666;
+    background-color: #1a1a1a;
 }
 
+/* MAIN CONTENT */
 main {
     flex: 1;
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 3rem 1rem 2rem;
 }
 
-/* Pealkiri ja intro */
 .showcase-header {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 3.5rem;
 }
 
 h1 {
     font-size: 32px;
     font-weight: 300;
     letter-spacing: 2px;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
     color: #ffffff;
 }
 
 .intro-text {
     font-size: 15px;
     color: #aaaaaa;
-    max-width: 540px;
-    margin: 0 auto;
+    max-width: 580px;
+    margin: 0 auto 1.5rem;
     line-height: 1.6;
     font-weight: 300;
 }
 
-/* Tööde ruudustik */
+/* Tekstialune nupp */
+.header-cta-wrap {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.btn-cta {
+    display: inline-block;
+    color: #cccccc;
+    background-color: #141414;
+    border: 1px solid #2a2a2a;
+    padding: 8px 20px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: all 0.25s ease;
+}
+
+.btn-cta:hover {
+    color: #ffffff;
+    border-color: #555555;
+    background-color: #1e1e1e;
+}
+
+/* WORKS GRID */
 .works-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -116,9 +136,8 @@ h1 {
     width: 100%;
 }
 
-/* H2 alapealkirjad - puhas paigutus ilma ekraani laiuse jooneta */
 h2 {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
     letter-spacing: 1px;
     margin-bottom: 1rem;
@@ -135,7 +154,6 @@ h2 {
     border: 1px solid #282828;
 }
 
-/* Ruudukujuline aken 1:1 proportsiooniga */
 .code-container iframe {
     width: 100%;
     aspect-ratio: 1 / 1;
@@ -143,19 +161,23 @@ h2 {
     display: block;
 }
 
-/* Mobiilivaade */
+/* MOBIILIVAADE */
 @media (max-width: 768px) {
     .works-grid {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
-    
+
     h1 {
         font-size: 26px;
     }
+
+    .logo-img {
+        height: 28px;
+    }
 }
 
-/* Footer - identne pealehe ja galeriiga */
+/* FOOTER - Servast serva piirjoonega */
 footer {
     text-align: center;
     padding: 40px 20px 50px;
